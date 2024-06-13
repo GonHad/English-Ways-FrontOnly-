@@ -1,0 +1,241 @@
+/* Ensure full height and width */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    font-size: 17px;
+}
+
+.logo-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo {
+    max-width: 120px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #ffffff,
+                0 0 10px #00a4af,
+                0 0 15px #007bff,
+                0 0 20px #ffffff,
+                0 0 25px #ffffff,
+                0 0 30px #1400be,
+                0 0 35px #007bff;
+}
+
+/* Ensure particles.js canvas is in the background */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #95d1f224;
+}
+
+/* Ensure header, main, and footer are above the particles.js canvas */
+header, main, footer {
+    position: relative;
+    z-index: 1;
+    background: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#photoCarousel,
+#testimonialCarousel {
+    margin-top: 20px;
+}
+
+#photoCarousel .carousel-inner,
+#testimonialCarousel .carousel-inner {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    border-radius: 45px;
+    height: auto;
+}
+
+/* Navigation bar */
+.navbar {
+    background-color: #0056b3;
+    margin-bottom: 20px;
+    padding: 0px 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 7px 15px;
+    border-radius: 60px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #007bff;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Headings with glow effect */
+.neon-text {
+    font-family: 'Arial', sans-serif;
+    color: #0056b3;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #00a4af, 0 0 15px #007bff, 0 0 20px #ffffff, 0 0 25px #ffffff, 0 0 30px #1400be, 0 0 35px #007bff;
+}
+
+h2 {
+    color: #0056b3;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 123, 255, 0.8);
+}
+
+h3 {
+    color: #0056b3;
+    text-align: center;
+    text-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Carousel item with glass effect */
+.carousel-item {
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+.carousel-item .testimonial {
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.carousel-item .testimonial p {
+    font-style: italic;
+    font-size: x-large;
+    text-decoration-color: #0056b3;
+}
+
+/* General section padding */
+section {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Call to action section */
+#cta {
+    background-color: #007fff08;
+    padding: 0rem;
+    text-align: left;
+    border-radius: 35px;
+}
+
+.cta-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Interactive list styling */
+.interactive-list {
+    list-style: none;
+    padding: 15px;
+    margin: 30px;
+    text-align: center;
+}
+
+.interactive-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.interactive-list li:hover {
+    background-color: rgba(0, 123, 255, 0.2);
+    transform: scale(1.05);
+}
+
+/* Ensure the main content is centered and not shifted to the left */
+main {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+/* Additional margin adjustments for specific sections */
+#welcome, #course, #benefits {
+    margin-top: 60px;
+}
+
+/* Promo button */
+.promo-button-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: inline-block;
+}
+
+#promo-button {
+    padding: 10px 20px;
+    font-size: 22px;
+    border-radius: 5px;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.promo-icon {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.promo-button-container:hover,
+#promo-button:hover,
+.promo-icon:hover {
+    transform: scale(1.05) rotate(3deg);
+}
